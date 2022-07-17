@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CardDataService } from 'src/app/Services/card-data.service';
 
 @Component({
   selector: 'app-info-card-detail',
@@ -7,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InfoCardDetailComponent implements OnInit {
   @Input() studentDetailsData: any;
-  constructor() { }
+
+  constructor(public cardDataService : CardDataService) { }
 
   ngOnInit(): void {
   }
