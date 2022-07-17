@@ -13,7 +13,7 @@ export class InfoCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.cardDataService.getCardInfo().subscribe((data:any) => {
-      console.log(data);
+      //console.log(data);
       this.StudentDetailList = data;
     })
   }

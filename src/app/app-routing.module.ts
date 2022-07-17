@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './shared/home/home.component';
-import { ViewSectionComponent } from './shared/view-section/view-section.component';
+import { SharedComponent } from './shared/shared.component';
 
 const routes: Routes = [
+  //{ path: '', component: SharedComponent},
 ];
 
 @NgModule({

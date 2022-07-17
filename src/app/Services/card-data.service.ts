@@ -5,7 +5,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CardDataService {
-  url="/assets/Data/student.json";
+  allCardSelect = "";
+
+  url="/assets/Data/StudentDetail.json";
   constructor(private http: HttpClient) { }
 
   getCardInfo(): any{

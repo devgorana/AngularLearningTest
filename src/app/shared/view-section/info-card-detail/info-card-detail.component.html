@@ -1,17 +1,29 @@
+
 <div class="row w-100">
-        <div class="col-4" *ngFor="let data of studentDetailsData">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Student Id : </h5>
-                  <div class="card-text">
-                    <div class="">Name : </div>
-                    <div class="">Gender : </div>
-                    <div class="">Age : </div>
-                  </div>
+    <div class="col-3 d-flex justify-content-center my-2" *ngFor="let data of studentDetailsData">
+        <div class="card border" [ngClass]="this.cardDataService.allCardSelect" style="width: 18rem;">
+            <div class="card-header text-center">
+                Information
+            </div>
+            <div class="card-body p-0">
+              <h5 class="card-title"></h5>
+              <div class="card-text p-2">
+                <div class="">Id : {{data.id}}</div>
+                <div class="">Name : {{data.name}}</div>
+                <div class="">Gender : {{data.gender}}</div>
+                <div class="">Age : {{data.age}}</div>
+              </div>
+              <div class="card-footer">
+                <div class="row border">
+                    <div class="col-6 pe-1 ps-0 d-grid">
+                        <button class="btn btn-success">Select</button>
+                    </div>
+                    <div class="col-6 pe-0 ps-1 d-grid">
+                        <button class="btn btn-danger">Remove</button>
+                    </div>
                 </div>
               </div>
-        </div>
+            </div>
+          </div>
     </div>
-<div>
-    <button class="btn btn-success">Add Class</button>
 </div>
